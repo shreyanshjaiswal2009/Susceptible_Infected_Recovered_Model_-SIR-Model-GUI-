@@ -11,3 +11,5 @@ a. N = Total population
 b. SO,IO = Number of Initial susceptible people , Number of inital infected people,
 c. CR, RR = Contact rate (0-5) Recovery Rate - 0.1 (Predefined - average 10 days for infected individuals to recover.)  
 d. Rnot = Gives us the value of CR/RR, tells us how many individuals, on average an infected person can infect before they recover
+
+We have 3 files, Slider_GUI_Copy.py (Main code) pyinstaller_start.bat (For using pyinstaller to convert code to .exe) and setup.py (for using cx_FREEZE to convert code to .exe; Go to the directory where the Slider_GUI_Copy.py is located and also have setup.py there and run code python setup.py build)
