@@ -1,0 +1,6 @@
+#### REQUIREMENTS ##########
+tk
+matplotlib
+numpy
+scipy
+PIL
