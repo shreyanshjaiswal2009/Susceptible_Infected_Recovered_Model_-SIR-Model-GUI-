@@ -3,4 +3,4 @@ tk
 matplotlib
 numpy
 scipy
-PIL
+Pillow
