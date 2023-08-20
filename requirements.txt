@@ -6,7 +6,6 @@ scipy
 Pillow
 
 #### For converting .py to .exe
-sys
 cx_Freeze
 pyinstaller
 
