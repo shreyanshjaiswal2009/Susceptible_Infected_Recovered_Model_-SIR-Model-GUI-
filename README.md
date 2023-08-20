@@ -14,3 +14,4 @@ d. Rnot = Gives us the value of CR/RR, tells us how many individuals, on average
 
 We have 3 files, _**Slider_GUI_Copy.py**_ (Main code) **_pyinstaller_start.bat_** (For using pyinstaller to convert code to .exe) and _**setup.py**_ (for using cx_FREEZE to convert code to .exe; Go to the directory where the Slider_GUI_Copy.py is located and also have setup.py there and run in terminal/cmd **python setup.py build**)
 
+Please make sure to install all the required libraries. **_The cx_FREEZE, sys and pyinstaller libraries are for conversion of .py to .exe_** you may not install them if you wish not to convert your .py to .exe
