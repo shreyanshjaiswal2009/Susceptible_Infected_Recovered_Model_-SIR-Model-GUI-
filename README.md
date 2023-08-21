@@ -3,7 +3,27 @@ A Graphic User Interface showing the Susceptible Infected Recovered Model (SIR M
 
 This code is having some few interfraces, 
 1. Sliders for number of initial susceptible people, number of initail infected people, Contact rate , a slider for the total population, and a slider for the controlling the animation speed (0.5x to 2.5x) 
-2. It has some buttons, as follows, button for clearing the graph (won't work during animation), a button for Starting animation (simulate), one for pausing the animation, one for resuming, one Reset button (defaults the sliders to zero and clears the graph, won't work during animation) and finally, one for credits. _(You may remove it if you wish_) 
+2. It has some buttons, as follows, button for clearing the graph (won't work during animation), a button for Starting animation (simulate), one for pausing the animation, one for resuming, one Reset button (defaults the sliders to zero and clears the graph, won't work during animation) and finally, one for credits. _(You may remove it if you wish_)
+
+Remove this code if you don't want the credits button: 
+```
+def show_credits_dialog():
+    credits_text = "Made by Shreyansh (@shreyansh2009 on replit.com)"
+    messagebox.showinfo("Credits", credits_text)
+
+# ... (other parts of the code)
+
+# Create a custom style for the "CREDITS" button
+button_style = ttk.Style()
+button_style.configure("Small.TButton", font=("Arial", 10))
+
+# Create the "CREDITS" button with the custom style
+credits_button = ttk.Button(root, text="CREDITS", command=show_credits_dialog, style="Small.TButton")
+credits_button.pack(side="bottom", padx=5, pady=5)
+
+# ... (other parts of the code)
+
+```
 
 The graph has 3 lines (green - recovered, orange-infected,blue-susceptible) for representing the number of suceptible,infected and recovered.
 The title of the graph gives us some information.
@@ -14,7 +34,7 @@ d. Rnot = Gives us the value of CR/RR, tells us how many individuals, on average
 
 We have 3 files, _**Slider_GUI_Copy.py**_ (Main code) **_pyinstaller_start.bat_** (For using pyinstaller to convert code to .exe) and _**setup.py**_ (for using cx_FREEZE to convert code to .exe; Go to the directory where the Slider_GUI_Copy.py is located and also have setup.py there and run in terminal/cmd 
 
-```*python setup.py build```)
+```python setup.py build```)
 
 Please make sure to install all the required libraries. **_The cx_FREEZE, sys and pyinstaller libraries are for conversion of .py to .exe_** you may not install them if you wish not to convert your .py to .exe
 Use the requirements.txt file to install all the libraries. 
